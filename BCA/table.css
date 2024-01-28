@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  :root {
+    --color1: black;
+    --color2: gainsboro;
+  }
+  
+  .header-title {
+    height: 100px;
+    line-height: 100px;
+    background-color: black;
+  }
+  
+  .header-title p {
+    color: white;
+    font-size: 24px; /* Adjusted font size for better readability */
+    margin: 0;
+    text-align: center;
+  }
+  
+  .description {
+    width: 90%;
+    margin: 20px auto; /* Added margin for better spacing */
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for responsiveness */
+    justify-content: space-evenly;
+  }
+  
+  .left {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Adjusted max-width for better responsiveness */
+    margin-bottom: 20px; /* Added margin for better spacing */
+  }
+  
+  .right {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Adjusted max-width for better responsiveness */
+  }
+  
+  .apply-now-btn {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .apply-now-btn button {
+    margin: 10px auto; /* Adjusted margin for better spacing */
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .right .msg-title,
+  .right .msg-content {
+    background-color: white;
+    border: 1px solid gainsboro;
+    padding: 15px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px; /* Added margin for better spacing */
+  }
+  
+  .table-content {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for responsiveness */
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  table {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 40%; /* Adjusted max-width for better responsiveness */
+    margin-top: 10px;
+  }
+  
+  /* Rest of your CSS remains unchanged */
+  
+  @media screen and (max-width: 768px) {
+    .description {
+      flex-direction: column; /* Stack columns on smaller screens */
+    }
+  
+    .table-content {
+      flex-direction: column; /* Stack tables on smaller screens */
+    }
+  
+    table {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  }
+  

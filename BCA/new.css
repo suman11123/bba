@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.row {
+    margin: 30px;
+    background-color: red;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+
+form {
+    background-color: #fff;
+    width: 100%;
+  
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+ 
+button:hover {
+    background-color: #ff6347;
+}
+iframe {
+    width: 400px;
+    
+}
+h2{
+    text-align: center;
+}
+
+.details p{
+    line-height: 35px;
+    font-size: 18px;
+   
+}
+.details p i{
+    color: red;
+}
+
+
+
+/* ... (existing styles) ... */
+
+/* Media Query for tablets */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-5 {
+        margin-right: 0;
+    }
+
+    .details {
+        text-align: center; /* Center-align text on tablets */
+    }
+
+    .details p {
+        line-height: 1.5; /* Increase line-height for better readability on tablets */
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .container-fluid {
+        padding: 10px; /* Add padding for better visibility on small screens */
+    }
+
+    .details p {
+        font-size: 14px; /* Further adjust font size for mobile devices */
+    }
+}
+
+
